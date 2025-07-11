@@ -1,6 +1,22 @@
 build:
   version: "1.0"
 
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/loansdb
+    #url: jdbc:h2:mem:accountsdb
+    username: root
+    password: root
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8070/eureka/
+
 loans:
   message: "Hey, welcome to EazyBank loans related prod APIs "
   contactDetails:
