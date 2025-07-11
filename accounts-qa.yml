@@ -6,6 +6,15 @@ spring:
     url: jdbc:h2:mem:accountsdb
     username: root
     password: root
+    
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8070/eureka/
 
 accounts:
   message: "Welcome to EazyBank accounts related QA APIs "
