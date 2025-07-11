@@ -1,6 +1,15 @@
 build:
   version: "3.0"
 
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8070/eureka/
+
 accounts:
   message: "Welcome to EazyBank accounts related docker APIs "
   contactDetails:
