@@ -1,6 +1,14 @@
 build:
   version: "2.0"
 
+spring:
+  datasource:
+    #url: jdbc:mysql://localhost:3306/accountsdb
+    url: jdbc:h2:mem:cardsdb
+    username: root
+    password: root
+
+
 cards:
   message: "Welcome to EazyBank cards related QA APIs "
   contactDetails:
