@@ -4,7 +4,7 @@ build:
 spring:
   datasource:
     #url: jdbc:mysql://localhost:3306/accountsdb
-    url: jdbc:h2:mem:accountsdb
+    url: jdbc:h2:mem:loansdb
     username: root
     password: root
 
