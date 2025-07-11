@@ -1,6 +1,13 @@
 build:
   version: "1.0"
 
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/accountsdb
+    #url: jdbc:h2:mem:accountsdb
+    username: root
+    password: root
+
 eureka:
   instance:
     prefer-ip-address: true
