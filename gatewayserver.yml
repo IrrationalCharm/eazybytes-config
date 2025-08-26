@@ -7,4 +7,5 @@ eureka:
   client:
     registerWithEureka: true
     fetchRegistry: true
-
+  service-url:
+      defaultZone: http://configserver:8070/eureka/
