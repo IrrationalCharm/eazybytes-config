@@ -7,6 +7,8 @@ spring:
     #url: jdbc:h2:mem:accountsdb
     username: root
     password: root
+  config:
+    import: "optional:configserver:http://configserver:8071/"
 
 eureka:
   instance:
